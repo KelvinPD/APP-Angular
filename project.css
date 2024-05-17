@@ -7,7 +7,9 @@ ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  padding: 16px;
+  padding: 50px ;
+  background-color: rgb(133, 208, 153);
+  border-radius: 20px;
 }
 
 nav :hover {
@@ -15,6 +17,7 @@ nav :hover {
 }
 
 a {
+
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -25,5 +28,5 @@ a {
 
 .cron {
   align-items: center;
-  padding: 10px 400px;
+  padding: 0px 550px;
 }
