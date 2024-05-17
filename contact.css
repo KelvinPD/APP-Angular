@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(13, 76, 92);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 16px;
+}
+
+nav :hover {
+  color: rgb(0, 238, 255);
+}
+
+a {
+  display: flex;
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+}
+a img {
+  width: 40px;
+  height: 40px;
+  background-color: none;
+  border-radius: 50%;
+  align-items: center;
+}
+p {
+  padding: 0px 10px;
+}
+main a {
+  padding: 10px;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
