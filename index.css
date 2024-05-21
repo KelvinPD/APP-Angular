@@ -1,6 +1,6 @@
 body {
-  color: white;
-  background-color: rgb(13, 76, 92);
+  color: black;
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -10,15 +10,19 @@ ul {
   list-style-type: none;
   align-items: center;
   padding: 16px;
-  background-color: rgb(133, 208, 153);
   border-radius: 20px;
+  background-image: linear-gradient(
+    to right,
+    rgb(133, 208, 153),
+    rgb(85, 85, 209)
+  );
 }
 
 nav :hover {
   color: rgb(0, 238, 255);
 }
 
- a {
+a {
   color: white;
   text-decoration: none;
 }
@@ -27,15 +31,28 @@ header img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px solid rgb(0, 9, 128);
+  border: 5px solid transparent;
+  background-image: linear-gradient(rgb(133, 208, 153), rgb(85, 85, 209));
 }
 
 .center {
   text-align: center;
 }
-  
+.text {
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
 .text h1 {
+  padding: 50px 0px;
   color: rgb(0, 9, 128);
+}
+.text h2 {
+  padding: 10px 0px;
+}
+
+section {
+  padding: 10px 0px;
 }
 
 footer {
@@ -51,7 +68,7 @@ footer img {
 }
 
 footer a {
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 5%;
   text-align: center;
 }

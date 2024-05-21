@@ -1,17 +1,21 @@
 body {
-  background-color: rgb(13, 76, 92);
+  color: black;
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
-  justify-content: center;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   align-items: center;
   padding: 16px;
-  background-color: rgb(133, 208, 153);
   border-radius: 20px;
+  background-image: linear-gradient(
+    to right,
+    rgb(133, 208, 153),
+    rgb(85, 85, 209)
+  );
 }
 
 nav :hover {
@@ -37,5 +41,5 @@ p {
 main a {
   padding: 10px;
   justify-content: center;
-  color: rgb(255, 255, 255);
+  color: black;
 }

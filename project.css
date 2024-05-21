@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(13, 76, 92);
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -7,9 +7,14 @@ ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  padding: 50px ;
-  background-color: rgb(133, 208, 153);
+  align-items: center;
+  padding: 16px;
   border-radius: 20px;
+  background-image: linear-gradient(
+    to right,
+    rgb(133, 208, 153),
+    rgb(85, 85, 209)
+  );
 }
 
 nav :hover {
@@ -17,16 +22,16 @@ nav :hover {
 }
 
 a {
-
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
 .container {
+  width: 100%;
+  height: 150px;
   padding: 5px 0px;
 }
 
 .cron {
-  align-items: center;
-  padding: 0px 550px;
+  padding: 0px 350px;
 }
