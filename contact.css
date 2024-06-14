@@ -2,15 +2,20 @@ body {
   color: black;
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 15%;
 }
 
-ul {
+.nav ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   align-items: center;
+  position: fixed;
+  margin: 0%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
   padding: 16px;
-  border-radius: 20px;
   background-image: linear-gradient(
     to right,
     rgb(133, 208, 153),
@@ -23,23 +28,25 @@ nav :hover {
 }
 
 a {
-  display: flex;
+  align-items: center;
+  padding: 10px 10px;
   list-style-type: none;
   color: white;
   text-decoration: none;
 }
-a img {
-  width: 40px;
-  height: 40px;
+
+.imagem img {
+  height: 10%;
+  width: 5%;
   background-color: none;
   border-radius: 50%;
   align-items: center;
 }
+
 p {
   padding: 0px 10px;
 }
+
 main a {
-  padding: 10px;
-  justify-content: center;
-  color: black;
+  color: rgb(0, 0, 0);
 }

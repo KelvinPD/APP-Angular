@@ -2,15 +2,20 @@ body {
   color: black;
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
+  padding-top: 15%;
 }
 
-ul {
+.nav ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   align-items: center;
+  position: fixed;
+  margin: 0%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
   padding: 16px;
-  border-radius: 20px;
   background-image: linear-gradient(
     to right,
     rgb(133, 208, 153),
@@ -32,15 +37,17 @@ header img {
   height: 150px;
   border-radius: 50%;
   border: 5px solid transparent;
-  background-image: linear-gradient(rgb(133, 208, 153), rgb(85, 85, 209));
+  background-image: radial-gradient(circle, rgb(0, 255, 68), rgb(77, 77, 187));
 }
 
 .center {
   text-align: center;
 }
+
 .text {
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgb(0, 0, 0);
+  margin: 0%;
 }
 
 .text h1 {
@@ -76,7 +83,8 @@ footer p {
   margin-top: 5px;
 }
 .container {
-  padding: 0px 50px;
+  text-align: center;
+  padding: 0px 20px;
 }
 .text {
   padding: 0px 50px;
