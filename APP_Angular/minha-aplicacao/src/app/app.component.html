@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body id="corpo">
+  <div class="container">
+    <h1>Lista de Contatos</h1>
+    <form (ngSubmit)="addContact()">
+      <input type="text" [(ngModel)]="newContactName" placeholder="Nome do Contato" name="contactName" required>
+      <input type="text" [(ngModel)]="newContactPhone" [mask]="'(00) 00000-0000'" placeholder="Telefone" name="contactPhone" required>
+      <button type="submit">Adicionar Contato</button>
+    </form>
+    <ul>
+      <li *ngFor="let contact of contacts; let i = index">
+        {{ contact.name }} - {{ contact.phone }}
+        <button (click)="removeContact(i)">Remover</button>
+      </li>
+    </ul>
+  </div>
+</body>
+<footer id="rodaPe">
+  <h1>aqui fica seu roda pé</h1>
+</footer>
+</html>
