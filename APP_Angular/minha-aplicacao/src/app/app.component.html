@@ -10,7 +10,7 @@
     <h1>Lista de Contatos</h1>
     <form (ngSubmit)="addContact()">
       <input type="text" [(ngModel)]="newContactName" placeholder="Nome do Contato" name="contactName" required>
-      <input type="text" [(ngModel)]="newContactPhone" [mask]="'(00) 00000-0000'" placeholder="Telefone" name="contactPhone" required>
+      <input type="text" [(ngModel)]="newContactPhone" [mask]="'(00) 00000-0000'" placeholder="(22) 55555-4444" name="contactPhone" required>
       <button type="submit">Adicionar Contato</button>
     </form>
     <ul>

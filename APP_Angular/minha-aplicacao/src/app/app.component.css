@@ -5,7 +5,8 @@
     background: linear-gradient(#2196F3, #ff227e) padding-box, /* Background interno */
               linear-gradient(to right, #2196F3, #FF5722) border-box; /* Gradiente na borda */
     color: #fff;
-    border: 3px solid #1976D2; /* Borda tracejada */
+    border: 5px solid #a200ff; /* Borda tracejada */
+    border-radius: 5%;
     padding: 5%;
   }
 
@@ -21,12 +22,12 @@
     border: 5px solid transparent;
   border-radius: 10px;
   background: linear-gradient(#2196F3, #ff227e) padding-box, /* Background interno */
-              linear-gradient(to right, #2196F3, #FF5722) border-box; /* Gradiente na borda */
+              linear-gradient(to top, #ff006a, #008cff) border-box; /* Gradiente na borda */
   }
   
   h1 {
     text-align: center;
-    color: #2196F3;
+    color: #80c6ff;
   }
   
   form {
