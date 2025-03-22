@@ -1,79 +1,86 @@
+ ::ng-deep html {
+  background: linear-gradient(#2196F3, #ff227e) padding-box;
+}
+
 .container {
-    max-width: 600px;
-    margin: 20px auto;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(#2196F3, #ff227e) padding-box, /* Background interno */
-              linear-gradient(to right, #2196F3, #FF5722) border-box; /* Gradiente na borda */
-    color: #fff;
-    border: 5px solid #a200ff; /* Borda tracejada */
-    border-radius: 5%;
-    padding: 5%;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 50%;
+  margin-left: 250px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#2196F3, #ff227e) padding-box;
+  color: #fff;
+  border: 5px solid #a200ff;
+  border-radius: 5%;
+  padding: 5%;
+  box-shadow: 0px 0px 10px 5px #52525280;
+}
 
-
-  html, body {
-    height: 100%; /* Faz o corpo ocupar 100% da altura do navegador */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove espaçamentos padrão */
-  }
-  
-  #corpo {
-    background-color: #5a99d8; /* Define a cor de fundo */
-    border: 5px solid transparent;
+h1 {
+  text-align: center;
+  color: #fff;
+  background-color: #ff2eb9;
+  padding: 30px;
   border-radius: 10px;
-  background: linear-gradient(#2196F3, #ff227e) padding-box, /* Background interno */
-              linear-gradient(to top, #ff006a, #008cff) border-box; /* Gradiente na borda */
-  }
-  
-  h1 {
-    text-align: center;
-    color: #80c6ff;
-  }
-  
-  form {
-    display: flex;
-    justify-content: space-between;
-    /* margin-bottom: 20px; */
-  }
-  
-  input {
-    flex: 1;
-    margin-right: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    background-color: #2196F3;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #1976D2;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-  #rodaPe {
-    background-color: #1976D2;
-    margin: 0%;
-    margin-top: 10%;
-    border-radius: 10px 10px 10px 10px ;
-    padding: 10%;
-  }
-  
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1976D2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.message {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeout 10s forwards;
+  z-index: 1000;
+}
+
+
+@keyframes fadeout {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
