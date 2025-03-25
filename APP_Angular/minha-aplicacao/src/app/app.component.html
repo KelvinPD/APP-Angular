@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p *ngIf="message" class="message">{{ message }}</p>
+  <div class="container">
+    <h1>Lista de Cadastro</h1>
+    <form (ngSubmit)="addContact()">
+      <input type="text" [(ngModel)]="newContactName" placeholder="Nome do Contato" name="contactName" required>
+      <input type="text" [(ngModel)]="newContactPhone" [mask]="'(00) 00000-0000'" placeholder="(22) 55555-4444" name="contactPhone" required>
+      <input type="text" [(ngModel)]="newCPF" [mask]="'000.000.000-00'" placeholder="000.000.000-00" name="cpf" required> 
+      <button type="submit">Adicionar Contato</button>
+    </form>
+    <ul>
+      <li *ngFor="let contact of contacts; let i = index">
+        {{ contact.name }} / {{ contact.phone }} / {{ contact.cpf }}
+        <button (click)="removeContact(i)">Remover</button>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
